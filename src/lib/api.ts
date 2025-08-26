@@ -69,7 +69,7 @@ export const djAIAPI = {
   // Get supported audio formats
   async getSupportedFormats(): Promise<string[]> {
     const response = await api.get('/supported-formats');
-    return response.data;
+    return response.data.formats;
   },
 
   // Upload and analyze audio track
