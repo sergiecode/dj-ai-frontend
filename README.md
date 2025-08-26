@@ -403,8 +403,20 @@ Whether you're learning web development, building music applications, or explori
 ---
 
 **Connect with Sergie Code**:
-- 🎥 YouTube: Educational programming content
-- 💻 GitHub: Open source projects and tutorials
-- 🌐 Web: Professional software development services
+- 📸 Instagram: https://www.instagram.com/sergiecode
+
+- 🧑🏼‍💻 LinkedIn: https://www.linkedin.com/in/sergiecode/
+
+- 📽️Youtube: https://www.youtube.com/@SergieCode
+
+- 😺 Github: https://github.com/sergiecode
+
+- 👤 Facebook: https://www.facebook.com/sergiecodeok
+
+- 🎞️ Tiktok: https://www.tiktok.com/@sergiecode
+
+- 🕊️Twitter: https://twitter.com/sergiecode
+
+- 🧵Threads: https://www.threads.net/@sergiecode
 
 *Empowering musicians through technology education* 🎵💻

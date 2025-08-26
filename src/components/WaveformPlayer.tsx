@@ -135,6 +135,7 @@ const WaveformPlayer: React.FC<WaveformPlayerProps> = ({
         <button
           onClick={handleRewind}
           disabled={!audioUrl}
+          aria-label="Rewind to beginning"
           className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           <RotateCcw className="w-5 h-5" />
@@ -143,6 +144,7 @@ const WaveformPlayer: React.FC<WaveformPlayerProps> = ({
         <button
           onClick={handlePlayPause}
           disabled={!audioUrl || isLoading}
+          aria-label={isPlaying ? "Pause" : "Play"}
           className="p-3 rounded-full bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-white transition-colors"
         >
           {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
@@ -151,6 +153,7 @@ const WaveformPlayer: React.FC<WaveformPlayerProps> = ({
         <button
           onClick={handleStop}
           disabled={!audioUrl}
+          aria-label="Stop"
           className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           <Square className="w-5 h-5" />
@@ -167,6 +170,7 @@ const WaveformPlayer: React.FC<WaveformPlayerProps> = ({
           step="0.01"
           value={volume}
           onChange={(e) => setVolume(parseFloat(e.target.value))}
+          aria-label="Volume control"
           className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
         />
         <span className="text-sm text-gray-600 min-w-[3rem]">

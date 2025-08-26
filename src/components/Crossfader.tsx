@@ -114,6 +114,7 @@ const Crossfader: React.FC<CrossfaderProps> = ({
               value={crossfaderPosition}
               onChange={handleCrossfaderChange}
               disabled={isAutoMixing}
+              aria-label="Crossfader position"
               className={`w-full h-3 rounded-lg appearance-none cursor-pointer slider ${getCrossfaderColor()}`}
               style={{
                 background: `linear-gradient(to right, 
@@ -136,10 +137,11 @@ const Crossfader: React.FC<CrossfaderProps> = ({
       {/* Auto Mix Controls */}
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="mix-duration" className="block text-sm font-medium text-gray-700 mb-2">
             Auto Mix Duration: {mixDuration}s
           </label>
           <input
+            id="mix-duration"
             type="range"
             min="2"
             max="20"
@@ -147,6 +149,7 @@ const Crossfader: React.FC<CrossfaderProps> = ({
             value={mixDuration}
             onChange={(e) => setMixDuration(parseInt(e.target.value))}
             disabled={isAutoMixing}
+            aria-label="Auto mix duration"
             className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
         </div>
