@@ -1,7 +1,10 @@
 {
-  "name": "dj-ai-frontend-temp",
+  "name": "dj-ai-frontend",
   "version": "0.1.0",
   "private": true,
+  "description": "AI-powered DJ system frontend with waveform visualization and backend integration",
+  "author": "Sergie Code",
+  "keywords": ["dj", "ai", "music", "waveform", "react", "audio"],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -9,19 +12,24 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/wavesurfer.js": "^6.0.12",
+    "axios": "^1.11.0",
+    "lucide-react": "^0.542.0",
+    "next": "15.5.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.1"
+    "react-icons": "^5.5.0",
+    "wavesurfer.js": "^7.10.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.1",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
